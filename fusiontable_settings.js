@@ -30,11 +30,11 @@ var MapsLib = MapsLib || {}; MapsLib.schemaVersion = 2;
     // See https://developers.google.com/fusiontables/docs/v1/migration_guide for more info
 
     // The encrypted Table ID of your Fusion Table (found under File => About)
-    MapsLib.fusionTableId = "13xmU6wANRJb0Niqcdz5Tr0xWh4AyV0yN10xMxPc";
+    MapsLib.fusionTableId = "1euHNAy9kG1LMiPuvTjgJjOc25qOqIWmYVCCoZEnD";
 
     // *New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
     // *Important* this key is for demonstration purposes. please register your own.
-    MapsLib.googleApiKey ="AIzaSyAMVBSXes-6P-gWaxRj20GK8NT6WDVpozM";
+    MapsLib.googleApiKey ="AIzaSyCH4tXE8IzFXJMJJbPyszK8FzhRt2ewyxc";
     
 
     // DONE!  YOU COULD DELETE EVERYTHING AFTER THIS POINT AND STILL HAVE A WORKING APP.
@@ -147,15 +147,15 @@ $.extend(MapsLib, {
     // 3. CUSTOM CONTENT //
     ///////////////////////
 
-/*
+
     // Title bar (including title of website)
-    title: "SF Restaurant Inspections",
+    title: "Uasin Gishu Healthcare Facilities Locator",
 
     // Contents of the About Page.  You can use "{title}" to insert your title.
     aboutPage: " \
         <h3>About {title}</h3> \
-        <p>This is a demonstration of a Mobile Template using Fusion Tables.    Developed by SF Brigade for Code For America, it's an adaptation of Derek Eder's searchable Fusion Table template, licensed under the <a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/License' target='_blank'>MIT License</a>.    This particular application uses health inspection data for businesses in San Francisco.</p> \
-        <p>To use this template for your own Fusion Table data, <a href='https://github.com/sfbrigade/Mobile-Fusion-Tables' target='_blank'>clone this repository</a> and replace the fields inside fusiontable_settings.js to match your content.</p> \
+        <p>This is a healthcare facility locator application for Uasin Gishu County in Kenya.    Developed by John Kemboi for Uasin Gishu County, it's an adaptation of Derek Eder's searchable Fusion Table, licensed under the <a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/License' target='_blank'>MIT License</a>.    This particular application uses Kenya health Master facililty listing data for all healthcare facilities in Kenya.</p>\
+        <p>.</p> \
         ",
 
     // If you already customized your marker styles and infoboxes within the Fusion Table,
@@ -195,12 +195,12 @@ $.extend(MapsLib, {
     //        - true when populating a row in the "List" view
 
     // delimitedColumns (optional): specify delimiter per column, and row.COLUMN_NAME will return an array
-    delimitedColumns: {"violations": ";"},
+    //delimitedColumns: {"violations": ";"},
 
     // listViewSortByColumn (optional): specify column to sort by, instead of sorting by distance
     //                                  append "DESC" to sort in reverse
-    listViewSortByColumn: "name",
-
+    //listViewSortByColumn: "name",
+/*
     customInfoboxHtml: " \
         {{#if isListView}} \
             <div> \
@@ -238,17 +238,17 @@ $.extend(MapsLib, {
     // 4. MAP PREFERENCES //
     ////////////////////////
 
-/*
+
     // Override the location column in your Fusion Table (useful if you have multiple columns)
     // NOTE: if you have "latitude" and "longitude" columns, just use "latitude"
-    //locationColumn:  "latitude",
+    locationColumn:  "LAT",
 
     // Center and zoom radius that your map defaults to when location services are off.
     // If useDefaultMapBounds is true (see section 2), this also determines which addresses get priority with autocomplete
     defaultMapBounds: {
 
         // Use [latitude, longitude] or address
-        center: "San Francisco, CA",
+        center: "0.511587, 35.282755",
 
         // "X miles" or "X meters"
         radius: "6 miles"
@@ -261,10 +261,10 @@ $.extend(MapsLib, {
         // If true: use nearby location only if we're within default map bounds
         //          otherwise, post boundsExceededMessage (if non-empty) and use mapDefaultCenter.
         onlyWithinDefaultMapBounds: true,
-        boundsExceededMessage:      "Your location is far away from San Francisco.    Defaulting to city limits.",
+        boundsExceededMessage:      "Your location is far away from Eldoret.    Defaulting to city limits.",
 
         // use this zoom radius if starting at nearby location
-        nearbyZoomRadius:           "200 meters",
+        nearbyZoomRadius:           "2000 meters",
 
         // Snap to nearby zoom radius when user hits "Nearby"?    Options are:
         // true              = always snap to zoom level
@@ -283,7 +283,7 @@ $.extend(MapsLib, {
     //       - opacityPercent (default = 50):
     //            0 = completely invisible
     //            100 = completely opaque
-
+/*
     mapOverlays: [ 
         "1GBiESlYt_Lc9O5PLuLaii1L74HeY7G4O1fMh9OE", // FusionTable ID of another table
         { 
@@ -293,7 +293,7 @@ $.extend(MapsLib, {
             opacityPercent: 60
         },
     ],
-
+*/
     // If needed, you can change the visibility of these layers by calling this in script:
     //    MapsLib.setLayerVisibility([array of indices from bottom to top])
     // Examples: 
