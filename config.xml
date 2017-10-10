@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.ughealthlocator2" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>UGhealthlocator2</name>
+<widget id="com.phonegap.ughealthfinder" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>ughealthfinder</name>
     <description>
         A blank PhoneGap app.
     </description>
-    <author email="kemboijohn@yahoo.com" href="http://phonegap.com">
+    <author email="kemboi_john@yahoo.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
     <content src="index.html" />
